@@ -10,4 +10,5 @@ image by installing Go, building Go, and removing Go in one RUN step.
 
     $ PROJECT_ID=<your-project-id-here>
     $ gcloud alpha container builds create --tag=gcr.io/$PROJECT_ID/cb-example-go .
-    $ gcloud docker run --pull gcr.io/$PROJECT_ID/cb-example-go
+    $ gcloud docker pull gcr.io/$PROJECT_ID/cb-example-go
+    $ docker run gcr.io/$PROJECT_ID/cb-example-go
