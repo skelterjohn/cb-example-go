@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/go'
+  args: ['install', 'app']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '--tag=gcr.io/$PROJECT_ID/cb-example-go', '.']
+images: ['gcr.io/$PROJECT_ID/cb-example-go']
