@@ -3,3 +3,6 @@
 The `cloudbuild` branch uses the Container Builder service to create a
 slim image.
 
+    $ PROJECT_ID=<your-project-id-here>
+    $ gcloud alpha container builds create --config=cloudbuild.yaml .
+	$ gcloud docker run gcr.io/$PROJECT_ID/cb-example-go
