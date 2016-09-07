@@ -1,0 +1,7 @@
+{
+  "trigger_template": {
+    "repoName": "cb-examples-go",
+    "branchName": "cloudbuild"
+  },
+  "filename": "cloudbuild.yaml"
+}
